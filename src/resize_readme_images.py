@@ -1,7 +1,7 @@
 """Resize Markdown slide images rendered in a README.
 
 Example:
-    python src/resize_readme_images.py README.md --width-percent 40
+    python src/resize_readme_images.py README.md --width-percent 75
 """
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ def main() -> None:
     parser.add_argument(
         "--width-percent",
         type=int,
-        default=40,
+        default=75,
         help="Rendered image width as a percentage of the available width.",
     )
     args = parser.parse_args()
